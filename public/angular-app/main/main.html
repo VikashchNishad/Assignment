@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main page</title>
+</head>
+<style>
+	h4 {
+		text-align: center;
+	}
+</style>
+<body>
+
+<div class="container" style="padding-top: 30px;">
+<div ng-if="!vm.loggedInUser">
+	<h1> Welcome to Janiti.com Please login to your account.......</h1>
+</div>
+
+<div ng-if="vm.loggedInUser">
+<h4>Hello {{ vm.loggedInUser }}</h4>
+
+
+<h4>Your are interested in {{ vm.userInterest }}</h4>
+
+<div ng-if="vm.userInterest == 'Education'">
+<h4>Science/Technology News</h4>
+
+<div id="widgetmain" style="margin-left: 65px; text-align:left;overflow-y:auto;overflow-x:hidden;width:1000px;background-color:#transparent; border:2px solid #333333;"><div id="rsswidget" style="height:1300px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1496083653267&amp;x=http%3A%2F%2Fnews.google.com%2Fnews%3Fned%3Dus%26topic%3Dt%26output%3Drss&amp;w=1000&amp;h=1300&amp;bc=333333&amp;bw=2&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=true&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:1000px; height:1300px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:2px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>
+
+</div>
+
+<div ng-if="vm.userInterest == 'Sports'">
+<h4>Sports News</h4>
+<div id="widgetmain" style="margin-left: 65px; text-align:left;overflow-y:auto;overflow-x:hidden;width:1000px;background-color:#transparent; border:2px solid #333333;"><div id="rsswidget" style="height:1300px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1496083481615&amp;x=http%3A%2F%2Fnews.google.com%2Fnews%3Fned%3Dus%26topic%3Ds%26output%3Drss&amp;w=1000&amp;h=1300&amp;bc=333333&amp;bw=2&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=true&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:1000px; height:1300px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:2px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>
+
+</div>
+
+<div ng-if="vm.userInterest == 'Entertainment'">
+<h4>Entertainment News</h4>
+
+<div id="widgetmain" style="margin-left: 65px; text-align:left;overflow-y:auto;overflow-x:hidden;width:1000px;background-color:#transparent; border:2px solid #333333;"><div id="rsswidget" style="height:1300px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1496083268070&amp;x=http%3A%2F%2Fnews.google.com%2Fnews%3Fned%3Dus%26topic%3De%26output%3Drss&amp;w=1000&amp;h=1300&amp;bc=333333&amp;bw=2&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=true&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:1000px; height:1300px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:2px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>
+
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>

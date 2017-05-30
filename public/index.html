@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="sampleApp">
+<head>
+  
+ <meta charset="uft-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+		<base href="/">
+
+	<title>Node and Angular</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+
+</head>
+<body>
+<ts-navigation></ts-navigation>
+ 
+  <div ng-view></div>
+
+
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+	<script src="libs/angular-jwt/dist/angular-jwt.js"></script>
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="angular-app/appRoutes.js"></script>
+	<script src="angular-app/data-factory/data-factory.js"></script>
+
+    <script src="angular-app/main/main-controller.js"></script>
+    <script src="angular-app/users/register/register-controller.js"></script>
+    <script src="angular-app/users/login/login-controller.js"></script>
+    <script src="angular-app/navigation-directive/navigation-directive.js"></script>
+   
+    <script src="angular-app/auth/auth-factory.js"></script>
+    <script src="angular-app/auth/auth-interceptor.js"></script>  
+</body>
+</html>

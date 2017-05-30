@@ -1,0 +1,23 @@
+{
+  "name": "janitri",
+  "description": "This is assignment.",
+  "main": "server.js",
+  "authors": [
+    "vikash chandra"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-jwt": "latest"
+  }
+}
